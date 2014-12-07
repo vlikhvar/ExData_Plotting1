@@ -5,7 +5,7 @@ sub$DateTime <- paste(sub$Date, sub$Time, sep=" ")
 library(lubridate)
 sub$DateTime <- dmy_hms(sub$DateTime)
 
-par(mfrow = c(2,2), mar=c(3,4.5,2,2))
+par(mfrow = c(2,2), mar=c(4.5,4.5,2,2))
 with(sub, {
   plot(DateTime, Global_active_power, type = "n",
        ylab = "Global Active Power", xlab = "",
